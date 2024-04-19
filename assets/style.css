@@ -76,22 +76,22 @@ body {
 }
 .about-me__title {
 	margin-top: 1em;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	font-size: 30px;
 }
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
 }
+
 #about-me p {
-	width: 80%;
-	font-size: 14px;
+	width: 50%;
+	font-size: 18px;
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh;
 }
 .title{
 	text-align: center;
@@ -146,8 +146,8 @@ body {
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
-	font-weight: 300;
-
+	font-weight: 400;
+	font-size: 24px;
 }
 .quote__author {
 	font-family: Spectral;
@@ -255,7 +255,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h2, #about-me p {
 		width: 100%;
 	}
 }
