@@ -7,6 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nina Carducci - Photographe à Bordeaux</title>
 
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Nina Carducci",
+		  "image": "http://www.googleusercontent.com/assets/images/nina-photographe.webp",
+		  "telephone": "05 56 67 78 89",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200"
+		  },
+		  "openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": {
+			  "@type": "DayOfWeek",
+			  "name": "lundi au vendredi"
+			}
+		  },
+		  "url": "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		}
+		</script>
+
 	<meta itemprop="name" content="Nina Carducci - Photographe à Bordeaux" />
 	<meta itemprop="description" content="Photographe professionnelle à Bordeaux et en Île-de-France." />
 	<meta itemprop="image" content="https://nina-carducci.github.io/" />
@@ -40,16 +64,17 @@
 </head>
 
 <body>
+	<span itemscope itemtype="http://schema.org/LocalBusiness">
 <header>
-	<div class="top-header">
-		<h1 class="name">Nina Carducci</h1>
+	<div class="top-header" >
+		<h1 itemprop="name" class="name">Nina Carducci</h1>
 		<div class="nav">   
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram-nina.png" alt="Instagram"></a></li>
+				<li><a itemprop="url" class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram-nina.png" alt="Instagram"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -86,11 +111,11 @@
 	</div>
 	<div id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina-photographe.webp" alt="Photographie de la photographe Nina Carducci." title="Photographie de Nina Carducci">
+			<img itemprop="image" src="./assets/images/nina-photographe.webp" alt="Photographie de la photographe Nina Carducci." title="Photographie de Nina Carducci">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<p class="about-me__introduction">Je suis Nina Carducci, photographe professionnelle à Bordeaux. <br> Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="about-me__introduction">Je suis Nina Carducci, photographe professionnelle à Bordeaux</span>. <br> Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. <br>
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
@@ -170,7 +195,11 @@
 		<div class="container">
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
-				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures.</p>
+				<p> N’hésitez pas à m’écrire ou à me contacter au <span itemprop="telephone">05 56 67 78 89</span> ! <br>Je suis disponible du 
+					<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+					<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+					<span itemprop="name">lundi au vendredi</span></span></span>, de 10h à 19h, et localisé au <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>, <span itemprop="postalCode">33200</span> <span itemprop="addressLocality">Bordeaux</span></span>.</p>
 				<form action="" method="post">
 					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
@@ -186,7 +215,7 @@
 			</div>
 		</div>
 	</div>
-</footer>
+</footer></span>
 
 </body>
 </html>
